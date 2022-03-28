@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyasalar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <h1>Piyasalar</h1>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <ul class="list-group">
+                    <li class="list-group-item usd">
+                        <div class="row">
+                            <div class="col-7">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="img/usd.png" alt="usd">
+                                    </div>
+                                    <div class="col-8">
+                                        <span class="priceName">USD</span>
+                                        <span class="priceSubname">Amerikan Doları</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 pad0">
+                                <span class="exchangeTitle">ALIŞ</span>
+                                <span class="exchangePrice alis">0</span>
+                            </div>
+                            <div class="col-3">
+                                <span class="exchangeTitle">SATIŞ</span>
+                                <span class="exchangePrice satis">0</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item eur">
+                        <div class="row">
+                            <div class="col-7">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="img/eur.png" alt="eur">
+                                    </div>
+                                    <div class="col-8">
+                                        <span class="priceName">EUR</span>
+                                        <span class="priceSubname">Avrupa Para Birimi</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 pad0">
+                                <span class="exchangeTitle">ALIŞ</span>
+                                <span class="exchangePrice alis">0</span>
+                            </div>
+                            <div class="col-3">
+                                <span class="exchangeTitle">SATIŞ</span>
+                                <span class="exchangePrice satis">0</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item gbp">
+                        <div class="row">
+                            <div class="col-7">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="img/gbp.png" alt="gbp">
+                                    </div>
+                                    <div class="col-8">
+                                        <span class="priceName">GBP</span>
+                                        <span class="priceSubname">İngiliz Sterlini</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 pad0">
+                                <span class="exchangeTitle">ALIŞ</span>
+                                <span class="exchangePrice alis">0</span>
+                            </div>
+                            <div class="col-3">
+                                <span class="exchangeTitle">SATIŞ</span>
+                                <span class="exchangePrice satis">0</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="rectangle">
+                    <h2>Döviz Çevir</h2>
+                    <div class="exchangeInputs">
+                        <input type="text" id="price" value="1.000.000">
+                        <select id="priceType">
+                            <option value="EUR" selected>EUR</option>
+                            <option value="USD">USD</option>
+                            <option value="GBP">GBP</option>
+                        </select>
+                    </div>
+                    <img src="img/buttons-change.png" alt="buttons-change">
+                    <div class="responseInput">
+                        <input type="text" id="exchangeResponse" disabled>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
